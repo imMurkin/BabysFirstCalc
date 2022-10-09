@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="index.css" rel="stylesheet">
+
+    <title>Calculator (tm)</title>
+</head>
+
+<body class="flex">
+
+    <header>
+        <h1>Calculator</h1>
+        <h2>An awesome calculator app!</h2>
+    </header>
+
+    <main>
+        <div>
+            <div class="user-input">
+                <input id="userInput1" type="number" min="1" max="1000"> +
+                <input id="userInput2" type="number" min="1" max="1000">
+            </div>
+            
+            <input id="answer" type="button" value="This is Your Answer">
+
+            <h1 id="result"></h1>
+        </div>
+    </main>
+
+    <!-- (Generally) load .js files at the end of your <body> as you want your page to display instantly; we can often wait for the JS to load in the background.-->
+    <script src="index.js"></script>
+</body>
+</html>

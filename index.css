@@ -1,0 +1,29 @@
+body {
+    background-color: #00d8e7;
+    color: #ece7e7;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+}
+
+/* We can apply a style to multiple items by comma-seperating their tags/ID's/classes */
+input,
+div {
+    padding: 4px;
+}
+
+/* . is for class */
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* # is for ID */
+#answer {
+    width: max-content;
+    padding: 4px;
+}
