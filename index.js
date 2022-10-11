@@ -1,8 +1,12 @@
 const userInput1 = document.getElementById("userInput1")
 const userInput2 = document.getElementById("userInput2")
 const colorPicker = document.getElementById("color")
+
+// Loads a color value from local storage
 const cachedColorValue = localStorage.get("bg")
-document.body.style.backgroundColor = cachedColorValue
+if (cachedColorValue) {
+    document.body.style.backgroundColor = cachedColorValue
+}
 
 function add(a, b) {
     // We want to call parseInt() on our a and b arguments, because we don't
@@ -80,6 +84,8 @@ function colorPick() {
 
     const colorValue = colorPicker.value
     document.body.style.backgroundColor = colorValue
+
+    // Store the background color in local storage
     localStorage.set("bg", colorValue )
 }
 
