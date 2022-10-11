@@ -6,6 +6,7 @@ const colorPicker = document.getElementById("color")
 const cachedColorValue = localStorage.getItem("bg")
 if (cachedColorValue) {
     document.body.style.backgroundColor = cachedColorValue
+    colorPicker.value = cachedColorValue
 }
 
 function add(a, b) {
