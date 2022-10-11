@@ -3,7 +3,7 @@ const userInput2 = document.getElementById("userInput2")
 const colorPicker = document.getElementById("color")
 
 // Loads a color value from local storage
-const cachedColorValue = localStorage.get("bg")
+const cachedColorValue = localStorage.getItem("bg")
 if (cachedColorValue) {
     document.body.style.backgroundColor = cachedColorValue
 }
@@ -86,7 +86,7 @@ function colorPick() {
     document.body.style.backgroundColor = colorValue
 
     // Store the background color in local storage
-    localStorage.set("bg", colorValue )
+    localStorage.setItem("bg", colorValue )
 }
 
 colorPicker.addEventListener("change", colorPick)
